@@ -7,7 +7,7 @@
   </div>
   <div id="textbook-content">
     {{ range .Site.Params.pages }}
-      <a href="{{ $.Site.BaseURL }}/{{ . }}">{{ . }}</a>
+      <a href="{{ $.Site.BaseURL }}{{ . }}">{{ . }}</a>
     {{ end }}
   </div>
 </div>
