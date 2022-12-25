@@ -84,10 +84,10 @@
 <div>
   <div id="ButtonContainer">
     {{ with $prev }}
-      <a class="btn btn-outline-success" href="{{ $.Site.BaseURL }}{{ lower $prev }}" id="PrevButton">前へ</a>
+      <a class="btn btn-success" href="{{ $.Site.BaseURL }}{{ lower $prev }}" id="PrevButton">前へ</a>
     {{ end }}
     {{ with $next }}
-      <a class="btn btn-outline-primary" href="{{ $.Site.BaseURL }}{{ lower $next }}" id="NextButton">次へ</a>
+      <a class="btn btn-primary" href="{{ $.Site.BaseURL }}{{ lower $next }}" id="NextButton">次へ</a>
     {{ end }}
   </div>
 </div>
