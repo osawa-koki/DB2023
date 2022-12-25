@@ -39,6 +39,11 @@
   table {
     margin: 1rem 0;
     border-collapse: collapse;
+    thead {
+      th {
+        text-align: center;
+      }
+    }
     th, td {
       border: 1px solid #ccc;
       padding: 0.5rem;
