@@ -8,7 +8,7 @@ hasCJKLanguage = true
 
 pages = [
   'インデックス',
-  'hogehoge',
+  'データベース基礎',
   'foofoo',
 ]
 
