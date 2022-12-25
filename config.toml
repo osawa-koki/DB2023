@@ -9,11 +9,8 @@ hasCJKLanguage = true
 pages = [
   'インデックス',
   'データベース基礎',
-  'foofoo',
+  'SQL基礎',
 ]
 
 columns = [
-  'インデックス',
-  'データベース全般',
-  'foofoo',
 ]
