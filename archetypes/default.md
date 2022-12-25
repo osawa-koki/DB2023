@@ -3,7 +3,6 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
 description: ""
-categories: [""]
+categories: ["DB2023", "教科書"]
 tags: [""]
 ---
-
