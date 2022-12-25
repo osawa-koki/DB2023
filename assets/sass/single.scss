@@ -152,6 +152,8 @@
         }
         &.active {
           height: 2rem;
+          display: flex;
+          align-items: center;
           &::before {
             content: "▶ ";
             color: red;
