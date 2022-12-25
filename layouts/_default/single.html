@@ -25,7 +25,11 @@
   <div id="SubDiv">
     <div id="Menu">
       {{ range .Site.Params.pages }}
-        {{ if eq . $.File.BaseFileName }}
+        {{/* ディレクトリ名とベースファイル名が一致していれば現在ページへのリンクと判断。 */}}
+        {{/* 文字列結合 -> printf */}}
+        {{/* 置換 -> replace */}}
+        {{/* ファイル情報は「$.File」に格納されている。 */}}
+        {{ if eq (printf "%s/%s" "textbook" .) (printf "%s%s" (replace $.File.Dir "\\" "/") $.File.BaseFileName) }}
           <a href="{{ $.Site.BaseURL }}textbook/{{ . }}" class="active">{{ . }}</a>
         {{ else }}
           <a href="{{ $.Site.BaseURL }}textbook/{{ . }}">{{ . }}</a>
