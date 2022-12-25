@@ -6,7 +6,70 @@
     <description>Recent content on データベーススペシャリスト試験対策</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 25 Dec 2022 18:29:41 +0900</lastBuildDate><atom:link href="https://osawa-koki.github.io/DB2023/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Dec 2022 23:41:01 +0900</lastBuildDate><atom:link href="https://osawa-koki.github.io/DB2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>埋込み型SQL</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/%E5%9F%8B%E8%BE%BC%E3%81%BF%E5%9E%8Bsql/</link>
+      <pubDate>Sun, 25 Dec 2022 23:41:01 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/textbook/%E5%9F%8B%E8%BE%BC%E3%81%BF%E5%9E%8Bsql/</guid>
+      <description>埋込み型SQL・会話型SQL SSMSなどで直接ユーザが実行するSQLを会話型SQLと呼びます。 それに対してプログラミング言語から直接実行する</description>
+    </item>
+    
+    <item>
+      <title>データ制御言語</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/%E3%83%87%E3%83%BC%E3%82%BF%E5%88%B6%E5%BE%A1%E8%A8%80%E8%AA%9E/</link>
+      <pubDate>Sun, 25 Dec 2022 23:12:04 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/textbook/%E3%83%87%E3%83%BC%E3%82%BF%E5%88%B6%E5%BE%A1%E8%A8%80%E8%AA%9E/</guid>
+      <description>データベースセキュリティ セキュリティってどれも大切ですが、データベースに関するセキュリティってその中でも本当に大切です。 参考までに、サイボウ</description>
+    </item>
+    
+    <item>
+      <title>データ定義言語</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/%E3%83%87%E3%83%BC%E3%82%BF%E5%AE%9A%E7%BE%A9%E8%A8%80%E8%AA%9E/</link>
+      <pubDate>Sun, 25 Dec 2022 21:39:06 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/textbook/%E3%83%87%E3%83%BC%E3%82%BF%E5%AE%9A%E7%BE%A9%E8%A8%80%E8%AA%9E/</guid>
+      <description>データ定義言語 「Data Definition Language」の略です。 データベース・テーブル・ビューに関する定義や、それらに関する権限の設定を行うためのSQ</description>
+    </item>
+    
+    <item>
+      <title>副問い合わせ</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/%E5%89%AF%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/</link>
+      <pubDate>Sun, 25 Dec 2022 21:07:36 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/textbook/%E5%89%AF%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/</guid>
+      <description>副問い合わせ 副問合せとはSELECT文を入れ子にすることを言います。 サブクエリとも言います。 SELECT文で使用する条件にSELECT文の結</description>
+    </item>
+    
+    <item>
+      <title>集合演算</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/%E9%9B%86%E5%90%88%E6%BC%94%E7%AE%97/</link>
+      <pubDate>Sun, 25 Dec 2022 20:06:36 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/textbook/%E9%9B%86%E5%90%88%E6%BC%94%E7%AE%97/</guid>
+      <description>集合演算 集合に対して論理的な法則を適用して新たな集合を求める演算を言います。 集合演算には以下の種類があります。 和 差 直積 積 商 和 OR演算を意味し</description>
+    </item>
+    
+    <item>
+      <title>SQLの種類</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/sql%E3%81%AE%E7%A8%AE%E9%A1%9E/</link>
+      <pubDate>Sun, 25 Dec 2022 19:51:28 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/textbook/sql%E3%81%AE%E7%A8%AE%E9%A1%9E/</guid>
+      <description>SQLの種類 SQLはその処理する内容によって以下の3つに分類されます。 データ操作言語(DML) データ定義言語(DDL) データ制御言語(DCL</description>
+    </item>
+    
+    <item>
+      <title>出題傾向</title>
+      <link>https://osawa-koki.github.io/DB2023/column/%E5%87%BA%E9%A1%8C%E5%82%BE%E5%90%91/</link>
+      <pubDate>Sun, 25 Dec 2022 19:38:12 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/column/%E5%87%BA%E9%A1%8C%E5%82%BE%E5%90%91/</guid>
+      <description>午前Ⅱ ほとんど過去問から出題されています。 内容としては、ほとんど基本的な知識が問われています。 また、近年はセキュリティに関する内容が問われる</description>
+    </item>
+    
     <item>
       <title>テーブルの結合</title>
       <link>https://osawa-koki.github.io/DB2023/textbook/%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%AE%E7%B5%90%E5%90%88/</link>
@@ -17,11 +80,11 @@
     </item>
     
     <item>
-      <title>SQL基礎</title>
-      <link>https://osawa-koki.github.io/DB2023/textbook/sql%E5%9F%BA%E7%A4%8E/</link>
+      <title>データ操作言語</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/%E3%83%87%E3%83%BC%E3%82%BF%E6%93%8D%E4%BD%9C%E8%A8%80%E8%AA%9E/</link>
       <pubDate>Sun, 25 Dec 2022 17:23:15 +0900</pubDate>
       
-      <guid>https://osawa-koki.github.io/DB2023/textbook/sql%E5%9F%BA%E7%A4%8E/</guid>
+      <guid>https://osawa-koki.github.io/DB2023/textbook/%E3%83%87%E3%83%BC%E3%82%BF%E6%93%8D%E4%BD%9C%E8%A8%80%E8%AA%9E/</guid>
       <description>CRUD CRUDとは、以下の単語の頭文字を合わせてもので、「データに対する一般的な処理4つ」のことです。 名称 説明 CREATE データの作成 READ データの読み取り UPDATE</description>
     </item>
     

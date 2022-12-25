@@ -69,4 +69,11 @@
   pre {
     padding: 1rem;
   }
+  p {
+    code {
+      margin: 0 0.5rem;
+      padding: 0.2rem 0.5rem;
+      background-color: #f9f9f9;
+    }
+  }
 }
