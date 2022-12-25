@@ -9,8 +9,42 @@
 
 main {
   max-width: 1200px;
-  margin: 0 auto;
+  @include mq(sb) {
+    margin: 60px auto;
+  }
+  @include mq(tb) {
+    margin: 70px auto;
+  }
+  @include mq(fb) {
+    margin: 80px auto;
+  }
   padding: 1rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 1500px;
+  margin: 0 auto;
+  z-index: 100;
+  background-color: rgba(white, 0.95);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  @include mq(sb) {
+    height: 50px;
+  }
+  @include mq(tb) {
+    height: 60px;
+  }
+  @include mq(fb) {
+    height: 70px;
+  }
+  #LogoImage {
+    position: absolute;
+    height: 100%;
+    left: 0;
+  }
 }
 
 #Index {
