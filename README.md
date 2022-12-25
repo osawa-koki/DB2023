@@ -32,3 +32,5 @@ hugo -d docs
 
 `layouts/_default/single.html`ファイル内にある`{{ lower . }}`の部分はローカル実行時に大文字だと挙動が変になるという理由から小文字に変換しているだけで、本番環境用のビルド時には`{{ . }}`に変換するのが好ましい。  
 別に変換しなくても動作には問題ないが、、、  
+
+※ [参考](https://github.com/gohugoio/hugo/issues/7686)  
