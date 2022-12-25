@@ -42,11 +42,11 @@
         {{/* 置換 -> replace */}}
         {{/* ファイル情報は「$.File」に格納されている。 */}}
         {{ if eq $page_name (printf "%s%s" (replace $.File.Dir "\\" "/") $.File.BaseFileName) }}
-          <a href="{{ $.Site.BaseURL }}textbook/{{ . }}" class="active">{{ . }}</a>
+          <a href="{{ $.Site.BaseURL }}textbook/{{ lower . }}" class="active">{{ . }}</a>
           {{ $next_flag = true }}
           {{ $prev = $temp }}
         {{ else }}
-          <a href="{{ $.Site.BaseURL }}textbook/{{ . }}">{{ . }}</a>
+          <a href="{{ $.Site.BaseURL }}textbook/{{ lower . }}">{{ . }}</a>
         {{ end }}
         {{/* 前へ戻る用のデータに使用する一時データ */}}
         {{ $temp = $page_name }}
@@ -57,10 +57,10 @@
 <div>
   <div id="ButtonContainer">
     {{ with $prev }}
-      <a class="btn btn-outline-success" href="{{ $.Site.BaseURL }}{{ $prev }}" id="PrevButton">前へ</a>
+      <a class="btn btn-outline-success" href="{{ $.Site.BaseURL }}{{ lower $prev }}" id="PrevButton">前へ</a>
     {{ end }}
     {{ with $next }}
-      <a class="btn btn-outline-primary" href="{{ $.Site.BaseURL }}{{ $next }}" id="NextButton">次へ</a>
+      <a class="btn btn-outline-primary" href="{{ $.Site.BaseURL }}{{ lower $next }}" id="NextButton">次へ</a>
     {{ end }}
   </div>
 </div>
