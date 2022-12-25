@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="{{ $style_style.Permalink }}">
   {{ $style_single := resources.Get "sass/single.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style_single.Permalink }}">
+  {{ $style_content := resources.Get "sass/content.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style_content.Permalink }}">
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 </head>
 <body>
