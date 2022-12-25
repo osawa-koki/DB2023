@@ -69,11 +69,11 @@
         {{/* 置換 -> replace */}}
         {{/* ファイル情報は「$.File」に格納されている。 */}}
         {{ if eq $page_name (printf "%s%s" (replace $.File.Dir "\\" "/") $.File.BaseFileName) }}
-          <a href="{{ $.Site.BaseURL }}column/{{ lower . }}" class="active">{{ . }}</a>
+          <a class="active">{{ . }}</a>
           {{ $next_flag = true }}
           {{ $prev = $temp }}
         {{ else }}
-          <a href="{{ $.Site.BaseURL }}column/{{ lower . }}">{{ . }}</a>
+          <a href="{{ $.Site.BaseURL }}column/{{ lower . }}/">{{ . }}</a>
         {{ end }}
         {{/* 前へ戻る用のデータに使用する一時データ */}}
         {{ $temp = $page_name }}
