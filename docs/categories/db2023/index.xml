@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DB2023 on データベーススペシャリスト試験対策</title>
+    <link>https://osawa-koki.github.io/DB2023/categories/db2023/</link>
+    <description>Recent content in DB2023 on データベーススペシャリスト試験対策</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 25 Dec 2022 18:29:41 +0900</lastBuildDate><atom:link href="https://osawa-koki.github.io/DB2023/categories/db2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>テーブルの結合</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%AE%E7%B5%90%E5%90%88/</link>
+      <pubDate>Sun, 25 Dec 2022 18:29:41 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/textbook/%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%AE%E7%B5%90%E5%90%88/</guid>
+      <description>テーブルの結合 関係データベースの最大の魅力は「データに矛盾が発生しない」ような設計が可能であることです。 その為に、１事実１箇所(1 fact, 1 pla</description>
+    </item>
+    
+    <item>
+      <title>SQL基礎</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/sql%E5%9F%BA%E7%A4%8E/</link>
+      <pubDate>Sun, 25 Dec 2022 17:23:15 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/textbook/sql%E5%9F%BA%E7%A4%8E/</guid>
+      <description>CRUD CRUDとは、以下の単語の頭文字を合わせてもので、「データに対する一般的な処理4つ」のことです。 名称 説明 CREATE データの作成 READ データの読み取り UPDATE</description>
+    </item>
+    
+    <item>
+      <title>データベース基礎</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%9F%BA%E7%A4%8E/</link>
+      <pubDate>Sun, 25 Dec 2022 16:58:11 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/textbook/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%9F%BA%E7%A4%8E/</guid>
+      <description>データベース データベースとは字面通りデータの保存庫で、データの保存・管理を目的とした技術を言います。 狭義では実際に集めたデータを保存する記憶</description>
+    </item>
+    
+    <item>
+      <title>インデックス</title>
+      <link>https://osawa-koki.github.io/DB2023/textbook/%E3%82%A4%E3%83%B3%E3%83%87%E3%83%83%E3%82%AF%E3%82%B9/</link>
+      <pubDate>Sun, 25 Dec 2022 13:32:56 +0900</pubDate>
+      
+      <guid>https://osawa-koki.github.io/DB2023/textbook/%E3%82%A4%E3%83%B3%E3%83%87%E3%83%83%E3%82%AF%E3%82%B9/</guid>
+      <description>データベーススペシャリスト試験 情報社会と形容される今日では、データの管理が最重要課題となっています。 データベースはデータ管理の必需品であり、</description>
+    </item>
+    
+  </channel>
+</rss>
