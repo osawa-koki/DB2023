@@ -56,11 +56,11 @@
 </div>
 <div>
   <div id="ButtonContainer">
-    {{ if ne $prev "" }}
-      <a href="{{ $.Site.BaseURL }}{{ $prev }}" id="PrevButton">前へ</a>
+    {{ with $prev }}
+      <a class="btn btn-outline-success" href="{{ $.Site.BaseURL }}{{ $prev }}" id="PrevButton">前へ</a>
     {{ end }}
-    {{ if ne $next "" }}
-      <a href="{{ $.Site.BaseURL }}{{ $next }}" id="NextButton">次へ</a>
+    {{ with $next }}
+      <a class="btn btn-outline-primary" href="{{ $.Site.BaseURL }}{{ $next }}" id="NextButton">次へ</a>
     {{ end }}
   </div>
 </div>
