@@ -1,22 +1,33 @@
 {{ partial "header.html" . }}
 <div id="Single">
-  <div id="content-header">
-    <div id="content-title">{{ .Title }}</div>
-    <div id="content-description">{{ .Description }}</div>
-    <div id="content-date">{{ .Date.Format "2006.01.02" }}</div>
-    <div id="content-categories">
-      {{ range .Params.categories }}
-        <div class="category">{{ . }}</div>
-      {{ end }}
+  <div id="MainDiv">
+    <div id="content-header">
+      <div id="content-title">{{ .Title }}</div>
+      <div id="content-description">{{ .Description }}</div>
+      <div id="content-date">{{ .Date.Format "2006.01.02" }}</div>
+      <div id="content-categories">
+        {{ range .Params.categories }}
+          <div class="category">{{ . }}</div>
+        {{ end }}
+      </div>
+      <div id="content-tags">
+        {{ range .Params.tags }}
+          <div class="tag">{{ . }}</div>
+        {{ end }}
+      </div>
     </div>
-    <div id="content-tags">
-      {{ range .Params.tags }}
-        <div class="tag">{{ . }}</div>
-      {{ end }}
+    <div id="MainBody">
+      <div id="content-body">
+        {{ .Content }}
+      </div>
     </div>
   </div>
-  <div id="content-body">
-    {{ .Content }}
+  <div id="SubDiv">
+    <div id="Menu">
+      {{ range .Site.Params.pages }}
+        <a href="{{ $.Site.BaseURL }}textbook/{{ . }}">{{ . }}</a>
+      {{ end }}
+    </div>
   </div>
 </div>
 {{ partial "footer.html" . }}
