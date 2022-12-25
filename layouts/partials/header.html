@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}Logo.png" type="image/x-icon" />
+  {{ $style_style := resources.Get "sass/style.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style_style.Permalink }}" />
+  {{ $style_single := resources.Get "sass/single.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style_single.Permalink }}" />
+  {{ $style_content := resources.Get "sass/content.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style_content.Permalink }}" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+</head>
+<body>
+  <header>
+    <a href="{{ .Site.BaseURL }}"><img id="LogoImage" src="{{ .Site.BaseURL }}Logo.png" alt="Logo" /></a>
+  </header>
+  <main>

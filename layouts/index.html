@@ -1,0 +1,14 @@
+
+{{ partial "header.html" . }}
+<div id="Index">
+  <div id="IndexHeader">
+    <h1>{{ $.Site.Title }}</h1>
+    <img id="Logo" src="{{ $.Site.BaseURL }}/Logo.png" alt="Logo" />
+  </div>
+  <div id="textbook-content">
+    {{ range .Site.Params.pages }}
+      <a href="{{ $.Site.BaseURL }}textbook/{{ . }}">{{ . }}</a>
+    {{ end }}
+  </div>
+</div>
+{{ partial "footer.html" . }}
