@@ -2,7 +2,7 @@
 title: "SQLの種類"
 date: 2022-12-25T19:51:28+09:00
 draft: false
-description: ""
+description: "SQLはデータを操作するためだけでなく、データの定義や権限の設定、トランザクションの制御などの多くの種類があります。"
 categories: ["DB2023", "教科書"]
 tags: ["SQL"]
 ---
