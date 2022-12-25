@@ -25,7 +25,11 @@
   <div id="SubDiv">
     <div id="Menu">
       {{ range .Site.Params.pages }}
-        <a href="{{ $.Site.BaseURL }}textbook/{{ . }}">{{ . }}</a>
+        {{ if eq . $.File.BaseFileName }}
+          <a href="{{ $.Site.BaseURL }}textbook/{{ . }}" class="active">{{ . }}</a>
+        {{ else }}
+          <a href="{{ $.Site.BaseURL }}textbook/{{ . }}">{{ . }}</a>
+        {{ end }}
       {{ end }}
     </div>
   </div>
