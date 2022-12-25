@@ -1,0 +1,60 @@
+
+@import './common';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Consolas', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "yu-gothic";
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#Index {
+  #IndexHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    #Logo {
+      width: 100px;
+      border-radius: 50%;
+      border: 1px lightgray solid;
+      margin-top: 1rem;
+    }
+  }
+  #textbook-content {
+    display: grid;
+    gap: 1rem;
+    margin-top: 3rem;
+    @include mq(sb) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mq(tb) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include mq(fb) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #0E6DFE;
+      text-decoration: none;
+      border-right: 1px lightgray solid;
+      &:last-child {
+        border-right: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

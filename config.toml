@@ -1,3 +1,17 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://osawa-koki.github.io/DB2023'
+languageCode = 'ja-jp'
+title = 'データベーススペシャリスト試験対策'
+
+[params]
+
+pages = [
+  'インデックス',
+  'hogehoge',
+  'foofoo',
+]
+
+columns = [
+  'インデックス',
+  'データベース全般',
+  'foofoo',
+]
