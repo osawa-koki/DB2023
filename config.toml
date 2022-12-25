@@ -9,6 +9,7 @@ hasCJKLanguage = true
 pages = [
   'インデックス',
   'データベース基礎',
+  'SQLの種類',
   'SQL基礎',
   'テーブルの結合',
 ]
