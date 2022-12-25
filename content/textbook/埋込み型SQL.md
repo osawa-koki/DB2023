@@ -47,7 +47,7 @@ while ($row = $stmt->fetch()) {
 
 `DECLARE カーソル名 CURSOR FOR`でカーソル変数を定義します。  
 
-```sql
+```cobol
 EXEC SQL
 DECLARE C1 CURSOR FOR
 SELECT number, name
@@ -64,7 +64,7 @@ END-EXEC
 
 UPDATE文とDELETE文に関しては対象のカーソル位置に関して行う処理であるため、実行に関してはカーソル位置を伝える必要があります。  
 
-```sql
+```cobol
 EXEC SQL
 UPDATE
   ...
@@ -72,7 +72,7 @@ UPDATE
 END-EXEC
 ```
 
-```sql
+```cobol
 EXEC SQL
 DELETE
   ...
@@ -84,13 +84,13 @@ END-EXEC
 
 トランザクションを使用する場合には、`COMMIT (WORK)`、`ROLLBACK (WORK)`を使用します。  
 
-```sql
+```cobol
 EXEC SQL
 COMMIT (WORK)
 END-EXEC
 ```
 
-```sql
+```cobol
 EXEC SQL
 ROLLBACK (WORK)
 END-EXEC
