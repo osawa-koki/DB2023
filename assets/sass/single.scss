@@ -126,6 +126,8 @@
       width: 200px;
     }
     #Menu {
+      $sb_menu_col_count: 2;
+      $tb_menu_col_count: 3;
       @include mq(sbtb) {
         margin-top: 1rem;
         padding-top: 1rem;
@@ -134,10 +136,10 @@
         gap: 0.5rem;
       }
       @include mq(sb) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat($sb_menu_col_count, 1fr);
       }
       @include mq(tb) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat($tb_menu_col_count, 1fr);
       }
       @include mq(fb) {
         display: flex;
@@ -147,6 +149,7 @@
         font-weight: bold;
         font-size: 1.2rem;
         margin: 1rem 0;
+        grid-column: 1 / -1;
       }
       a {
         color: #0969da;
