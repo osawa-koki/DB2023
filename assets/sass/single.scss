@@ -145,8 +145,11 @@
           text-decoration: underline;
         }
         &.active {
-          font-weight: bold;
-          color: black;
+          height: 2rem;
+          &::before {
+            content: "▶ ";
+            color: red;
+          }
           pointer-events: none;
           &:hover {
             text-decoration: none;
