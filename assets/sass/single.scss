@@ -17,7 +17,83 @@
     }
     #content-header {
       @include mq(sbtb) {
-        display: none;
+        display: grid;
+        gap: 0.5rem;
+        margin: 1rem auto;
+        width: 100%;
+        max-width: 500px;
+        border: 1px lightgray solid;
+        padding: 0.5rem;
+        * {
+          &::before {
+            font-size: 1.1rem;
+            font-weight: bold;
+          }
+        }
+        #content-title {
+          grid-row: 1 / 2;
+          &::before {
+            content: "タイトル: ";
+          }
+        }
+        #content-date {
+          grid-row: 2 / 3;
+          &::before {
+            content: "更新日: ";
+          }
+        }
+        #content-description {
+          grid-row: 5 / 6;
+          margin-left: 4rem;
+          text-indent: -3.5rem;
+          &::before {
+            content: "説明: ";
+          }
+        }
+        #content-categories {
+          grid-row: 3 / 4;
+          display: flex;
+          flex-wrap: wrap;
+          &::before {
+            content: "カテゴリ: ";
+            display: block;
+            margin-right: 1rem;
+          }
+          .category {
+            font-size: .8rem;
+            padding: 0.3rem 0.5rem;
+            border-radius: 1rem;
+            color: #0969da;
+            background-color: #ddf4ff;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        #content-tags {
+          grid-row: 4 / 5;
+          display: flex;
+          flex-wrap: wrap;
+          &::before {
+            content: "タグ: ";
+            display: block;
+            margin-right: 1rem;
+          }
+          .tag {
+            font-size: .8rem;
+            padding: 0.3rem 0.5rem;
+            border-radius: 1rem;
+            color: #0969da;
+            background-color: #ddf4ff;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       }
       @include mq(fb) {
         display: grid;
@@ -123,7 +199,10 @@
       margin-right: 3rem;
       border-right: 3px gray double;
       padding: 1rem;
-      width: 200px;
+      width: 250px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     #Menu {
       $sb_menu_col_count: 2;

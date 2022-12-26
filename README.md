@@ -18,7 +18,7 @@ hugo new textbook/<名前>.md
 hugo server -D
 
 # デプロイ用ビルド
-hugo -d docs
+hugo -d docs --minify
 ```
 
 ## 開発環境
