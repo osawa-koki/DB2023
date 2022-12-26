@@ -200,6 +200,9 @@
       border-right: 3px gray double;
       padding: 1rem;
       width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     #Menu {
       $sb_menu_col_count: 2;
